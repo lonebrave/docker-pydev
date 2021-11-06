@@ -1,4 +1,4 @@
-FROM python:3.10 as pydev
+FROM python:3.10
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
