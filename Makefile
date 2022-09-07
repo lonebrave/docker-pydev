@@ -28,3 +28,7 @@ run:
 release: build push
 
 release-latest: build-latest push-latest
+
+remove-req-versions:
+	sed -e 's/==.*//' requirements.txt > requirements_nover.txt
+	mv requirements_nover.txt requirements.txt
